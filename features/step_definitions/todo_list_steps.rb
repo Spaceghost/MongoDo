@@ -2,8 +2,9 @@ Given /^I am on the home page$/ do
   visit root_url
 end
 
-When /^I click the "([^"]*)" link$/ do |link|
-  click_link link
+When /^I click the "([^"]*)" link$/ do |page|
+pending
+  click_link page
 end
 
 When /^fill out the list details$/ do
