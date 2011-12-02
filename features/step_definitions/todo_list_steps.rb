@@ -3,7 +3,6 @@ Given /^I am on the home page$/ do
 end
 
 When /^I click the "([^"]*)" link$/ do |page|
-pending
   click_link page
 end
 
