@@ -22,8 +22,6 @@ group :development do
 end
 
 group :test do
-  gem 'rb-inotify'
-  gem 'libnotify'
   gem 'rr'
   gem 'cucumber-rails'
 #  gem 'email_spec'
@@ -38,10 +36,19 @@ group :test do
   gem 'launchy'
   gem 'simplecov', :require => false
   gem 'simplecov-rcov', :require => false
+
+# Guard
   gem 'spork', '~> 0.9.0rc9'
+  gem 'rb-inotify'
+  gem 'libnotify'
   gem 'guard-spork'
   gem 'guard-cucumber'
   gem 'guard-rspec'
+  gem 'guard-webrick'
+  gem 'guard-bundler'
+  gem 'guard-livereload'
+  gem 'guard-rails'
+  gem 'yajl-ruby'
 end
 
 
