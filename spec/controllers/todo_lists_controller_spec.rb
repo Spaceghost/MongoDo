@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TodoListController do
+describe TodoListsController do
 
   describe 'GET "index"' do
     before :each do

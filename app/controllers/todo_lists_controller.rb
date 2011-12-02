@@ -1,4 +1,4 @@
-class TodoListController < ApplicationController
+class TodoListsController < ApplicationController
 
   def index
     @todo_lists = TodoList.all
@@ -15,7 +15,7 @@ class TodoListController < ApplicationController
   def create
     @todo_list = TodoList.new(params[:todo_list])
     if @todo_list.save
-      redirect_to todo_list_index_path, :notice => 'TODO List successfully created'
+      redirect_to todo_lists_path, :notice => 'TODO List successfully created'
     else
       render :new
     end

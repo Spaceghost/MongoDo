@@ -4,7 +4,7 @@ gem 'rails'
 gem 'mongoid'
 gem 'bson_ext'
 gem 'mongoid_session_store'
-#gem 'tasteful_routes'
+gem 'tasteful_routes'
 gem 'formtastic'
 
 
