@@ -22,6 +22,8 @@ group :development do
 end
 
 group :test do
+  gem 'rb-inotify'
+  gem 'libnotify'
   gem 'rr'
   gem 'cucumber-rails'
 #  gem 'email_spec'
