@@ -9,13 +9,13 @@ gem 'mongoid_session_store'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
-#  gem 'sass-rails'
-  gem 'haml-rails'
-  gem 'coffee-rails'
-  gem 'uglifier'
-  gem 'therubyracer'
-end
+#group :assets do
+##  gem 'sass-rails'
+#  gem 'haml-rails'
+#  gem 'coffee-rails'
+#  gem 'uglifier'
+#  gem 'therubyracer'
+#end
 
 group :development do
   gem 'rspec-rails', '~> 2.7.0'

@@ -56,8 +56,8 @@ guard 'bundler' do
   # watch(/^.+\.gemspec/)
 end
 
-guard 'rails', :force_run => true do
-  watch('Gemfile.lock')
-  watch(%r{^(config|lib)/.*})
-end
+#guard 'rails', :force_run => true do
+#  watch('Gemfile.lock')
+#  watch(%r{^(config|lib)/.*})
+#end
 
