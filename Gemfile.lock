@@ -214,6 +214,10 @@ DEPENDENCIES
   remarkable_mongoid
   rr
   rspec-rails
+<<<<<<< HEAD
+=======
+  sass-rails
+>>>>>>> 4d7ec30e7f01942cca782f7441892dcaf25f6a0f
   simplecov
   simplecov-rcov
   spork (~> 0.9.0rc9)
