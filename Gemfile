@@ -5,6 +5,7 @@ gem 'mongoid'
 gem 'bson_ext'
 gem 'mongoid_session_store'
 gem 'tasteful_routes'
+gem 'formtastic'
 
 
 # Gems used only for assets and not required
@@ -22,6 +23,7 @@ group :development do
 end
 
 group :test do
+  gem 'simplecov', :require => false
   gem 'rr'
   gem 'cucumber-rails'
 #  gem 'email_spec'
