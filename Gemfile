@@ -31,6 +31,7 @@ group :test do
   gem 'fabrication'
   gem 'ffaker'
   gem 'remarkable_mongoid'
+  gem 'mongoid-rspec'
   gem 'database_cleaner'
   gem 'timecop'
   gem 'launchy'
