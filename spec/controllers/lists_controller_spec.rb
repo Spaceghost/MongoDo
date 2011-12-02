@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ListController do
+describe ListsController do
 
   describe 'GET "index"' do
     before :each do
