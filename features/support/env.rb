@@ -1,4 +1,3 @@
-require 'simplecov'
 require 'rubygems'
 require 'spork'
 

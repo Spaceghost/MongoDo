@@ -1,4 +1,3 @@
-require 'simplecov'
 require 'rubygems'
 require 'spork'
 
@@ -7,7 +6,7 @@ Spork.prefork do
   # This file is copied to spec/ when you run 'rails generate rspec:install'
   ENV["RAILS_ENV"] ||= 'test'
 
-require 'rails/application'
+  require 'rails/application'
   require 'rails/mongoid'
   require 'capybara/rspec'
   Spork.trap_class_method(Rails::Mongoid, :load_models)
