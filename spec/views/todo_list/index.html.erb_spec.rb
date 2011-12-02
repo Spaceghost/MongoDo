@@ -30,7 +30,9 @@ describe 'todo_list/index.html.erb' do
   end
 
   it 'has a "New list" link' do
-    rendered.should have_tag "a[href=?]", new_todo_list_path
+    rendered.should have_css "a" do
+     with_content "New list"
+    end
   end
 end
 
