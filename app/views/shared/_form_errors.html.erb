@@ -1,0 +1,4 @@
+<% if object.errors.any? %>
+  <div class="flash alert">Please fix the  <%= pluralize object.errors.count, 'issue' %> with your form.</div>
+<% end %>
+
