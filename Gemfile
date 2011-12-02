@@ -4,7 +4,7 @@ gem 'rails'
 gem 'mongoid'
 gem 'bson_ext'
 gem 'mongoid_session_store'
-gem 'tasteful_routes'
+#gem 'tasteful_routes'
 gem 'formtastic'
 
 
@@ -35,8 +35,7 @@ group :test do
   gem 'database_cleaner'
   gem 'timecop'
   gem 'launchy'
-  gem 'simplecov', :require => false
-  gem 'simplecov-rcov', :require => false
+  gem 'simplecov'
 
 # Guard
   gem 'spork', '~> 0.9.0rc9'
