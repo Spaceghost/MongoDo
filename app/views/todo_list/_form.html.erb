@@ -1,6 +1,7 @@
 <div id="form">
-<% form_for @todo_list do |f| %>
-  <%= f.input "Name" %>
+<%= semantic_form_for @todo_list do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "New list" %>
 <% end %>
-<div id="form">
+</div>
 
