@@ -5,9 +5,17 @@ Spork.prefork do
 
   # This file is copied to spec/ when you run 'rails generate rspec:install'
   ENV["RAILS_ENV"] ||= 'test'
+
+require 'rails/application'
+  require 'rails/mongoid'
+  require 'capybara/rspec'
+  Spork.trap_class_method(Rails::Mongoid, :load_models)
+  Spork.trap_method(Rails::Application::RoutesReloader, :reload!)
+
   require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
   require 'rspec/autorun'
+  require 'remarkable/mongoid'
 
   RSpec.configure do |config|
     # == Mock Framework
