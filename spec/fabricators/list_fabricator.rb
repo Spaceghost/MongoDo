@@ -1,4 +1,4 @@
-Fabricator(:todo_list) do
+Fabricator(:list) do
   name { Faker::HipsterIpsum.word }
 end
 

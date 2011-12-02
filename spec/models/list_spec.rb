@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 
-describe TodoList do
+describe List do
 
   describe 'validations' do
-    let!(:todo_list) { Fabricate :todo_list }
+    let!(:list) { Fabricate :list }
     it { should validate_presence_of :name }
   end
 

@@ -1,7 +1,7 @@
-Feature: Add TODO List
+Feature: Add List
   As a user, I want to be able to create lists so that I can keep track of what I should be doing.
 
-  Scenario: Successfully create TODO List
+  Scenario: Successfully create List
     Given I am on the home page
     When I click the "New list" link
     And fill out the list details

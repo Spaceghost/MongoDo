@@ -7,15 +7,15 @@ When /^I click the "([^"]*)" link$/ do |page|
 end
 
 When /^fill out the list details$/ do
-  @name = 'Home'
+  @name = Faker::HipsterIpsum.word
   fill_in 'Name', :with => @name
 end
 
 Then /^my new list should be created$/ do
-  TodoList.where(:name => @name).count.should == 1
+  List.where(:name => @name).count.should == 1
 end
 
 Then /^I should be on the show page for my list$/ do
-  current_path.should == todo_list_path(TodoList.find_by_name(@name))
+  current_path.should == todo_list_path(List.find_by_name(@name))
 end
 
