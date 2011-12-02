@@ -38,5 +38,26 @@ describe TodoListController do
 
   end
 
+  describe 'GET "new"' do
+
+    before :each do
+      get :new
+    end
+
+    it 'is successful' do
+      response.should be_success
+    end
+
+    it 'renders the new template' do
+      response.should render_template :new
+    end
+
+    it 'assigns a new TODO List instance' do
+      assigns[:todo_list].should_not be_nil
+      assigns[:todo_list].should_not be_persisted
+    end
+
+  end
+
 end
 

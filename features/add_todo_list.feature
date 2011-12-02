@@ -3,7 +3,7 @@ Feature: Add TODO List
 
   Scenario: Successfully create TODO List
     Given I am on the home page
-    When I click the "New List" button
+    When I click the "New list" link
     And fill out the list details
     Then my new list should be created
     And I should be on the show page for my list

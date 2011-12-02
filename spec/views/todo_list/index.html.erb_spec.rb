@@ -4,6 +4,7 @@ describe 'todo_list/index.html.erb' do
 
   before :each do
     assign :todo_lists, {}
+    render
   end
 
   describe 'TODO List' do
@@ -18,11 +19,18 @@ describe 'todo_list/index.html.erb' do
       rendered.should have_css 'div#lists'
     end
 
-    it 'displays each TODO List' do
-      pending
+    it 'displays each TODO List list item in unordered list' do
       rendered.should have_css 'div#lists ul li', :count => todo_lists.count
     end
 
+    it 'links to each TODO List\'s page' do
+      rendered.should have_css 'div#lists ul li a', :count => todo_lists.count
+    end
+
+  end
+
+  it 'has a "New list" link' do
+    rendered.should have_tag "a[href=?]", new_todo_list_path
   end
 end
 
