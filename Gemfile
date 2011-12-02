@@ -18,12 +18,11 @@ group :assets do
 end
 
 group :development do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 2.7.0'
 end
 
 group :test do
   gem 'rr'
-  gem 'rspec-rails'
   gem 'cucumber-rails'
 #  gem 'email_spec'
   gem 'capybara'

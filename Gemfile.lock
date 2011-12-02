@@ -150,17 +150,19 @@ GEM
     remarkable_mongoid (0.6.0)
       remarkable_activemodel (~> 4.0.0.alpha4)
     rr (1.0.4)
-    rspec (2.8.0.rc1)
-      rspec-core (= 2.8.0.rc1)
-      rspec-expectations (= 2.8.0.rc1)
-      rspec-mocks (= 2.8.0.rc1)
-    rspec-core (2.8.0.rc1)
-    rspec-expectations (2.8.0.rc1)
+    rspec (2.7.0)
+      rspec-core (~> 2.7.0)
+      rspec-expectations (~> 2.7.0)
+      rspec-mocks (~> 2.7.0)
+    rspec-core (2.7.1)
+    rspec-expectations (2.7.0)
       diff-lcs (~> 1.1.2)
-    rspec-mocks (2.8.0.rc1)
-    rspec-rails (1.3.2)
-      rack (>= 1.0.0)
-      rspec (>= 1.3.0)
+    rspec-mocks (2.7.0)
+    rspec-rails (2.7.0)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      railties (~> 3.0)
+      rspec (~> 2.7.0)
     rubyzip (0.9.5)
     selenium-webdriver (2.14.0)
       childprocess (>= 0.2.1)
@@ -217,7 +219,7 @@ DEPENDENCIES
   rails
   remarkable_mongoid
   rr
-  rspec-rails
+  rspec-rails (~> 2.7.0)
   simplecov
   simplecov-rcov
   spork (~> 0.9.0rc9)
