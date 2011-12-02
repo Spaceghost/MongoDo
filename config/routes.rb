@@ -1,5 +1,8 @@
 MongoDo::Application.routes.draw do
-  get "todo_list/index"
+
+  tasteful_resources :todo_list
 
   root :to => 'TodoList#index'
+
 end
+

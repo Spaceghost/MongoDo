@@ -4,7 +4,7 @@ gem 'rails'
 gem 'mongoid'
 gem 'bson_ext'
 gem 'mongoid_session_store'
-
+gem 'tasteful_routes'
 
 
 # Gems used only for assets and not required
