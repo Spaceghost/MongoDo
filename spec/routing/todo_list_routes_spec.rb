@@ -16,10 +16,12 @@ describe 'named routes for the todo_list resource' do
     let(:todo_list) {Fabricate(:todo_list)}
 
     before :each do
+      pending
       assign :todo_list, todo_list
     end
 
     it 'routes "edit_todo_list" route to the "todo_list#edit" controller action' do
+      pending
       {:get => edit_todo_list_path(todo_list)}.
       should route_to(:controller => 'todo_list', :action => 'edit')
     end
