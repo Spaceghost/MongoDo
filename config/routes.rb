@@ -2,7 +2,7 @@ MongoDo::Application.routes.draw do
 
   tasteful_resources :lists
 
-  root :to => 'List#index'
+  root :to => 'Lists#index'
 
 end
 
